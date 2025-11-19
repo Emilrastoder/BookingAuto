@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-page</title>
+    <link rel="stylesheet" href="/BookingAuto/css/loginstyle.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>BookingAuto</h1>
+            <ul>
+                <a href="/BookingAuto/index.php?controller=home">Accueil</a>
+                <a href="/BookingAuto/index.php?controller=cars">Voitures</a>
+                <a href="/BookingAuto/index.php?controller=services">Services</a>
+                <a href="/BookingAuto/index.php?controller=contact">Contact</a>
+            </ul>
+
+            
+            <form class="search-bar" action="#" method="get">
+                <input type="text" placeholder="Rechercher...">
+                <button type="submit">🔍</button>
+            </form>
+        </nav>
+
+        <div class="login-register">
+          <a href="/BookingAuto/index.php?controller=login" class="btn-login">Se connecter</a>
+          <a href="/BookingAuto/index.php?controller=register" class="btn-register">S'inscrire</a>
+        </div>
+
+    </header>
+
+    <main>
+        <h1>Connectez-vous</h1>
+        <form class="login-form" action="#" method="post">
+            <div class="input-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="mot_de_passe" required>
+            </div>
+            <button type="submit" class="btn-submit">Se connecter</button>
+        </form>
+    </main>
+       
+</body>
+</html>
